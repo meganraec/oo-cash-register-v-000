@@ -3,7 +3,7 @@
 #   let(:cash_register_with_discount) { CashRegister.new(20) }
 
 class CashRegister
-  attr_accessor :total, :discount, :new_register
+  attr_accessor :total, :discount, :last_transaction
 
   def initialize( discount = 0 )
     @total = 0
